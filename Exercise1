@@ -1,0 +1,12 @@
+import datetime
+now = datetime.datetime.now()
+
+name = raw_input("What is your name? ")
+age = raw_input("How old are you? ")
+u100 = (int(now.year) - int(age)) + 100
+ranNum = raw_input("Pick a random number between 1 & 25: ")
+
+hello = "Hello %s! Did you know, that you will be 100 years old in the year %d?" % (name, u100)
+
+for i in range (int(ranNum)):
+    print hello
